@@ -1,25 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components'
+import Header from './components/Header'
+import Banniere from './components/Banniere';
+import Titre from './components/Titre';
+import Hero from './components/Hero';
+import Partage from './components/Partage';
+import Intro from './components/Intro';
+import Footer from './components/Footer';
+import Commentaire from './components/Commentaire';
+
+const Container = styled.div`
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="App">
+      <Header/>
+      <Banniere/>
+      <Titre/>
+      <Hero/>
+      <Partage/>
+      <Intro/>
+      <Footer/>
+      <Commentaire/>
+    </Container>
   );
 }
 
