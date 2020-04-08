@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FaRegCommentDots, FaRegThumbsUp, FaWhatsapp } from "react-icons/fa";
 
 const Container = styled.div`
     width: 100%;
@@ -11,9 +12,11 @@ const Container = styled.div`
     background: white;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 `
 
 const Input = styled.input`
+    width: 180px;
     border: 1px solid #eee;
     border-radius: 50px;
     height: 24px;
@@ -21,10 +24,23 @@ const Input = styled.input`
     padding-left: 8px;
 `
 
+const Div = styled.div`
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 120px;
+    font-size: 20px;
+`
+
 const Commentaire = () => {
     return(
         <Container>
             <Input placeholder="commenter" />
+            <Div>
+                <FaRegThumbsUp/>
+                <FaRegCommentDots/>
+                <FaWhatsapp/>
+            </Div>
         </Container>
     )
 };
