@@ -12,9 +12,11 @@ const Container = styled.article`
         line-height: 24px;
     }
 
-    p:nth-child(1) {
-        font-weight: bold;
-        font-size: 24px;
+    p:nth-child(2) {
+        
+        a {
+            text-decoration: none;
+        }
     }
 
     p:nth-child(4) {
@@ -35,9 +37,12 @@ const Container = styled.article`
         position: absolute;
         background: linear-gradient(transparent, #eee);
         width: 100%;
-        height: 400px;
+        height: 100%;
+        max-height: 200px;
         left: 0;
-        top: 0;
+        bottom: 0;
+        top: 300px;
+        /* border: 2px solid red; */
     }
 `
 
@@ -60,7 +65,7 @@ const Modal = styled.div`
     height: 100%;
     background: rgba(0, 0, 0, 0.85);
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     z-index: 200;
     display: flex;
@@ -86,12 +91,12 @@ const Contenu = () => {
         <>
             <Container>
                 <p>
-                    "Tempor do et cillum nisi in laborum dolor dolore ullamco do. 
-                    Veniam laborum occaecat veniam laboris consequat."
+                    Les experts du comité de pilotage à l’initiative de cette plateforme,  dont entre autre Boris Cyrulnik, neuropsychiatre et Richard Delorme, pédopsychiatre, ont alerté la ministre de la famille, Dominique Bertinotti, des dangers liés au confinement.
                 </p>
                 <p>
-                    Do labore ullamco mollit excepteur enim ullamco mollit nisi elit occaecat dolore adipisicing. Reprehenderit Lorem et proident laboris amet anim ullamco ea ea amet. Consectetur quis quis qui aliqua veniam officia ea. Laboris qui in amet ea esse ipsum irure et.
-                    Do labore ullamco mollit excepteur enim ullamco mollit nisi elit occaecat dolore adipisicing. Reprehenderit Lorem et proident laboris amet anim ullamco ea ea amet. Consectetur quis quis qui
+                Dans ce contexte particulier, le gouvernement a donc accepté de revoir certaines mesures du confinement, notamment concernant la garde d’enfants. Pour palier à la détresse des parents au bord de la crise de nerfs, le gouvernement demande à ce que tous les grands-parents prennent le relai et garde à temps plein leurs petits-enfants pour une période de 15 jours minimum.
+                Toutefois, cette mesure sera applicable seulement après s’être assuré de remplir un certain nombre d’exigences.
+                Il faudra tout d’abord remplir un formulaire téléchargeable en ligne sur le site du <a href="https://www.gouvernement.fr/" target="_blank" rel="noopener noreferrer">gouvernement…</a>
                 </p>
                 <Bouton onClick={() => setOpenModal(true)} >Lire la suite</Bouton>
                 <p>Par <span><a href="https://www.europe1.fr/">Europe 1</a></span> avec AFP</p>

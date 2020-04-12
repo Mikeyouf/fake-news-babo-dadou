@@ -8,7 +8,6 @@ import logo from '../img/logo.jpg';
 const FooterContainer = styled.footer`
     background: #183375;
     width: 100%;
-    /* height: 160px; */
     color: white;
     font-family: 'fira sans';
     display: flex;

@@ -20,7 +20,7 @@ const Titre = () => {
     return(
         <Container>
             <Titre1>ACCUEIL / SANTE</Titre1>
-            <Titre2>Coronavirus: Les grands-parents bientôt amené à garder leurs petits enfants après désinfection totale?</Titre2>
+            <Titre2>Coronavirus: Les grands-parents bientôt amené à garder leurs petits enfants ?</Titre2>
         </Container>
     )
 }

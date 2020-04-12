@@ -17,7 +17,7 @@ const Hero = () => {
     return(
         <>
             <Image src={grandsparents} alt="grands parents école maison"/>
-            <Text>Un grand père qui s'occupe de ses petits enfants</Text>
+            <Text>Un grand père avec ses petits enfants</Text>
         </>
     )
 }
