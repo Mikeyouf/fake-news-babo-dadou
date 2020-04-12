@@ -74,7 +74,6 @@ const Modal = styled.div`
     img {
         width: 100%;
         height: 480px;
-        /* margin-top: calc(50% - 240px); */
     }
 `
 
