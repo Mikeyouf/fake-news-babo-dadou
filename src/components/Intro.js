@@ -9,6 +9,10 @@ const Container = styled.article`
         font-family: 'fira sans';
         text-align: justify;
         line-height: 24px;
+
+        a {
+            text-decoration: none;
+        }
     }
 
     p:nth-child(1) {
@@ -20,19 +24,30 @@ const Image = styled.img`
     max-width: 100vw;
 `
 
+const Text = styled.p`
+    color: grey;
+    margin-top: 0;
+    font-size: 12px;
+    font-family: 'fira sans';
+    text-align: center;
+`
+
 const Intro = () => {
     return(
         <>
             <Container>
                 <p>
-                    Suite aux remontée et aux études réalisées par les acteurs de la petite enfance et de la parentalité sur le terrain, il se pourrait que le gouvernement revoie sa copie concernant la garde des enfants par leurs grands-parents.
+                    "Des parents au bord de la crise de nerfs."
                 </p>
                 <p>
-                    Do labore ullamco mollit excepteur enim ullamco mollit nisi elit occaecat dolore adipisicing. Reprehenderit Lorem et proident laboris amet anim ullamco ea ea amet. Consectetur quis quis qui aliqua veniam officia ea. Laboris qui in amet ea esse ipsum irure et.
-                    Do labore ullamco mollit excepteur enim ullamco mollit nisi elit occaecat dolore adipisicing. Reprehenderit Lorem et proident laboris amet anim ullamco ea ea amet. Consectetur quis quis qui aliqua veniam officia ea. Laboris qui in amet ea esse ipsum irure et.
+                Tel était le titre de la chronique de la journaliste Carole Talila ce 07 avril 2020 pour <a href="https://www.france.tv/france-2/telematin/1368109-telematin.html" target="_blank" rel="noopener noreferrer">Télématin</a>.
+                Entre le télé-travail, le rythme soutenu des devoirs à la maison, sans oublier l’intendance…une montée en pression se fait sentir dans les foyers.
+                De nombreuses initiatives ont d’ailleurs vu le jour sur internet et les réseaux sociaux pour libérer les parents de cet état de stress.
+                Alertée par des messages de parents en détresse, la psychothérapeute et spécialiste de la parentalité positive, <a href="https://www.filliozat.net/" target="_blank" rel="noopener noreferrer">Isabelle Filliozat</a>, a mit en place un numéro vert <a href="0805827827">(0805 827 827)</a>, avec 105 écoutants pour conseiller et faire de la prévention.
                 </p>
             </Container>
             <Image src={ministre} alt="ministre Bertinotti Dominique"/>
+            <Text>La ministre en visite d'un pôle famille avant le confinement</Text>
         </>
     )
 }

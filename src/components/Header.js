@@ -64,7 +64,9 @@ const Header = () => {
           <div/>
           <div/>
         </Burger>
-        <img src={logo} alt="logo europe1"/>
+        <a href="https://www.europe1.fr/">
+          <img src={logo} alt="logo europe1"/>
+        </a>
         <Play>
           <img src={play} alt="play europe1"/>
           <p>En direct</p>

@@ -84,7 +84,9 @@ const Footer = () => {
                 </div>
             </Colonne2>
             <Colonne>
-                <img src={logo} alt="logo europe1"/>
+                <a href="https://www.europe1.fr/">
+                    <img src={logo} alt="logo europe1"/>
+                </a>
                 <p className="copy"><FaRegCopyright/> 2020 Europe 1 Digital</p>
             </Colonne>
         </FooterContainer>

@@ -40,8 +40,12 @@ const Partage = () => {
         <Container>
             <h3>Partager sur:</h3>
             <div>
-                <img src={facebook} alt="facebbok"/>
-                <img src={twitter} alt="twitter"/>
+                <a href="https://www.facebook.com/Europe1/" target="_blank" rel="noopener noreferrer">
+                    <img src={facebook} alt="facebbok"/>
+                </a>
+                <a href="https://twitter.com/Europe1" target="_blank" rel="noopener noreferrer">
+                    <img src={twitter} alt="twitter"/>
+                </a>
             </div>
         </Container>
     )

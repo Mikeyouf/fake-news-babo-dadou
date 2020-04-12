@@ -23,7 +23,11 @@ const Container = styled.article`
 
         span {
             font-weight: bold;
-            color: black;
+
+            a {
+                color: black;
+                text-decoration: none;
+            }
         }
     }
 
@@ -34,7 +38,6 @@ const Container = styled.article`
         height: 400px;
         left: 0;
         top: 0;
-        /* border-bottom: 1px solid red; */
     }
 `
 
@@ -73,7 +76,7 @@ const Modal = styled.div`
 
     img {
         width: 100%;
-        height: 480px;
+        max-height: 480px;
     }
 `
 
@@ -91,7 +94,7 @@ const Contenu = () => {
                     Do labore ullamco mollit excepteur enim ullamco mollit nisi elit occaecat dolore adipisicing. Reprehenderit Lorem et proident laboris amet anim ullamco ea ea amet. Consectetur quis quis qui
                 </p>
                 <Bouton onClick={() => setOpenModal(true)} >Lire la suite</Bouton>
-                <p>Par <span>Europe 1</span> avec AFP</p>
+                <p>Par <span><a href="https://www.europe1.fr/">Europe 1</a></span> avec AFP</p>
                 <div className="transparent"/>
                 {
                     openModal &&
