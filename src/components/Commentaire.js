@@ -4,7 +4,7 @@ import { FaRegCommentDots, FaRegThumbsUp, FaWhatsapp } from "react-icons/fa";
 
 const Container = styled.div`
     width: 100%;
-    height: 40px;
+    height: 48px;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -13,6 +13,7 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+    box-shadow: 0 -3px 10px 6px rgba(0, 0, 0, 0.1);
 `
 
 const Input = styled.input`
@@ -30,6 +31,7 @@ const Div = styled.div`
     align-items: center;
     width: 120px;
     font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
 `
 
 const Commentaire = () => {

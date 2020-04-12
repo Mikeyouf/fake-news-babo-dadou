@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import ministre from '../img/bertinotti2.jpg';
 
 const Container = styled.article`
     padding: 0 8px;
@@ -13,48 +14,26 @@ const Container = styled.article`
     p:nth-child(1) {
         font-weight: bold;
     }
+`
 
-    p:nth-child(3) {
-        font-weight: bold;
-        font-size: 24px;
-    }
-
-    p:nth-child(5) {
-        color: grey;
-        font-size: 14px;
-
-        span {
-            font-weight: bold;
-            color: black;
-        }
-    }
+const Image = styled.img`
+    max-width: 100vw;
 `
 
 const Intro = () => {
     return(
-        <Container>
-            <p>
-                Tempor do et cillum nisi in laborum dolor dolore ullamco do. 
-                Veniam laborum occaecat veniam laboris consequat. 
-                Ullamco sint eu non laborum velit occaecat officia qui 
-                ullamco elit in. Fugiat labore dolor ex dolor culpa incididunt 
-                dolor Lorem est. Dolore commodo non ad esse adipisicing veniam.
-            </p>
-            <p>
-                Do labore ullamco mollit excepteur enim ullamco mollit nisi elit occaecat dolore adipisicing. Reprehenderit Lorem et proident laboris amet anim ullamco ea ea amet. Consectetur quis quis qui aliqua veniam officia ea. Laboris qui in amet ea esse ipsum irure et.
-                Do labore ullamco mollit excepteur enim ullamco mollit nisi elit occaecat dolore adipisicing. Reprehenderit Lorem et proident laboris amet anim ullamco ea ea amet. Consectetur quis quis qui aliqua veniam officia ea. Laboris qui in amet ea esse ipsum irure et.
-            </p>
-            <p>
-                "Tempor do et cillum nisi in laborum dolor dolore ullamco do. 
-                Veniam laborum occaecat veniam laboris consequat."
-            </p>
-            <p>
-                Do labore ullamco mollit excepteur enim ullamco mollit nisi elit occaecat dolore adipisicing. Reprehenderit Lorem et proident laboris amet anim ullamco ea ea amet. Consectetur quis quis qui aliqua veniam officia ea. Laboris qui in amet ea esse ipsum irure et.
-                Do labore ullamco mollit excepteur enim ullamco mollit nisi elit occaecat dolore adipisicing. Reprehenderit Lorem et proident laboris amet anim ullamco ea ea amet. Consectetur quis quis qui aliqua veniam officia ea. Laboris qui in amet ea esse ipsum irure et.
-                Do labore ullamco mollit excepteur enim ullamco mollit nisi elit occaecat dolore adipisicing. Reprehenderit Lorem et proident laboris amet anim ullamco ea ea amet. Consectetur quis quis qui aliqua veniam officia ea. Laboris qui in amet ea esse ipsum irure et.
-            </p>
-            <p>Par <span>Europe 1</span> avec AFP</p>
-        </Container>
+        <>
+            <Container>
+                <p>
+                    Suite aux remontée et aux études réalisées par les acteurs de la petite enfance et de la parentalité sur le terrain, il se pourrait que le gouvernement revoie sa copie concernant la garde des enfants par leurs grands-parents.
+                </p>
+                <p>
+                    Do labore ullamco mollit excepteur enim ullamco mollit nisi elit occaecat dolore adipisicing. Reprehenderit Lorem et proident laboris amet anim ullamco ea ea amet. Consectetur quis quis qui aliqua veniam officia ea. Laboris qui in amet ea esse ipsum irure et.
+                    Do labore ullamco mollit excepteur enim ullamco mollit nisi elit occaecat dolore adipisicing. Reprehenderit Lorem et proident laboris amet anim ullamco ea ea amet. Consectetur quis quis qui aliqua veniam officia ea. Laboris qui in amet ea esse ipsum irure et.
+                </p>
+            </Container>
+            <Image src={ministre} alt="ministre Bertinotti Dominique"/>
+        </>
     )
 }
 

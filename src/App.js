@@ -8,6 +8,7 @@ import Partage from './components/Partage';
 import Intro from './components/Intro';
 import Footer from './components/Footer';
 import Commentaire from './components/Commentaire';
+import Contenu from './components/Contenu';
 
 const Container = styled.div`
   height: 100%;
@@ -24,6 +25,7 @@ function App() {
       <Hero/>
       <Partage/>
       <Intro/>
+      <Contenu/>
       <Footer/>
       <Commentaire/>
     </Container>

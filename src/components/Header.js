@@ -13,6 +13,7 @@ const HeaderBanner = styled.header`
   top: 0;
   right: 0;
   left: 0;
+  z-index: 100;
 
   img {
     height: 30px;
