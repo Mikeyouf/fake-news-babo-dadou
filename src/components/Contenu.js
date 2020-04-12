@@ -38,10 +38,10 @@ const Container = styled.article`
         background: linear-gradient(transparent, #eee);
         width: 100%;
         height: 100%;
-        max-height: 200px;
+        max-height: 160px;
         left: 0;
-        bottom: 0;
-        top: 300px;
+        bottom: 90px;
+        /* top: 300px; */
         /* border: 2px solid red; */
     }
 `
