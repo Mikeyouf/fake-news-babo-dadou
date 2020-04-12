@@ -60,6 +60,9 @@ const Modal = styled.div`
     top: 0;
     left: 0;
     z-index: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
     h2 {
         text-align: center;
@@ -70,6 +73,8 @@ const Modal = styled.div`
 
     img {
         width: 100%;
+        height: 480px;
+        /* margin-top: calc(50% - 240px); */
     }
 `
 
