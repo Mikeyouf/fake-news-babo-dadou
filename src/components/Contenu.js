@@ -104,7 +104,7 @@ const Contenu = () => {
                 {
                     openModal &&
                     <Modal className="modal" onClick={() => setOpenModal(false)}>
-                        <h2>surprise !</h2>
+                        <h2>poisson d'avril ! euh...</h2>
                         <img src={famille} alt="famille"/>
                         <h2>joyeuses pâques !</h2>
                     </Modal>
