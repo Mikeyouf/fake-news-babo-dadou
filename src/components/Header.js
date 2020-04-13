@@ -14,6 +14,8 @@ const HeaderBanner = styled.header`
   right: 0;
   left: 0;
   z-index: 100;
+  box-sizing: content-box;
+  max-width: 420px;
 
   img {
     height: 30px;

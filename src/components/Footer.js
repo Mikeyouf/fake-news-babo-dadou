@@ -12,6 +12,7 @@ const FooterContainer = styled.footer`
     font-family: 'fira sans';
     display: flex;
     flex-wrap: wrap;
+    max-width: 420px;
 `
 
 const Colonne = styled.div`

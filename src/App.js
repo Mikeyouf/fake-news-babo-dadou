@@ -14,6 +14,10 @@ const Container = styled.div`
   height: 100%;
   width: 100%;
   min-height: 100vh;
+  max-width: 420px;
+  overflow: hidden;
+  box-sizing: content-box;
+  /* margin: 0 auto; */
 `
 
 function App() {

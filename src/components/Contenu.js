@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import famille from '../img/famille.jpg';
 
 const Container = styled.article`
     padding: 0 8px;
@@ -62,6 +61,7 @@ const Bouton = styled.button`
 
 const Modal = styled.div`
     width: 100%;
+    max-width: 420px;
     height: 100%;
     background: rgba(0, 0, 0, 0.85);
     position: fixed;
@@ -70,18 +70,20 @@ const Modal = styled.div`
     z-index: 200;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+
+    iframe {
+        max-width: 420px;
+        height: 100%;
+        width: 100%;
+    }
 
     h2 {
         text-align: center;
         font-weight: bold;
-        color: white;
+        color: yellow;
         text-transform: uppercase;
-    }
-
-    img {
-        width: 100%;
-        max-height: 480px;
+        margin: 0;
     }
 `
 
@@ -104,9 +106,9 @@ const Contenu = () => {
                 {
                     openModal &&
                     <Modal className="modal" onClick={() => setOpenModal(false)}>
-                        <h2>poisson d'avril ! euh...</h2>
-                        <img src={famille} alt="famille"/>
-                        <h2>joyeuses pâques !</h2>
+                        <h2>!!! fake news !!!</h2>
+                        <iframe src="https://giphy.com/embed/LrC1m7Ay3xsha" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
+                        <h2>!!! fake news !!!</h2>
                     </Modal>
                 }
             </Container>
